@@ -1,0 +1,56 @@
+
+
+article>div{
+	background-color: #cc00cc;
+	width: 30%;
+	margin: 5% 3%;
+	border:2px solid black;
+	border-radius:10px ;
+
+
+}
+nav{
+		display: flex;
+		color: red;
+		flex-direction: row;
+		justify-content: center;
+}
+nav a{
+		border: 2px solid black;
+		background-color: #e88bed;
+		color: black;
+		padding: 20px;
+		border-radius: 10px;
+		opacity: 1;
+
+		
+	}
+
+.submenu{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 6%;
+}
+.submenu>div{
+
+	display: flex;
+	justify-content: space-between;
+	visibility: hidden;
+
+}
+div:hover>.submenu>div{
+	visibility: initial;
+}
+
+	body{
+			background: #53316F url('https://img5.goodfon.com/wallpaper/nbig/b/12/synth-retrowave-synthwave-fon-new-retro-wave-sintveiv-ret-29.jpg') no-repeat;
+			background-size: cover;
+			color: white;
+	}
+
+.produits{
+	height:10em;
+	border: 2px solid black;
+	border-radius: 10px
+}
