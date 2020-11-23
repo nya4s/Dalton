@@ -17,18 +17,19 @@ $reponse = $bdd->query('SELECT * FROM user WHERE email="'.$email.'"') or die(pri
 
 while($val = $reponse->fetch()){
 
-
-
 	if($pwd == $val['pwd']){
 		echo 'Connexion réussi';
-		header('Location: Acceuil.html');  
+		header('Location: Accueil.html');  
 	}
 	else{
 		echo 'Connexion refusé';
 		header('Location: connexion.html');  
 	}
 
+
 }
+
+        
 
 
 

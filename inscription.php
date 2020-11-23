@@ -27,7 +27,7 @@ $req->execute(array(
 	));
 
 
-header('Location: Acceuil.html');  
+header('Location: Accueil.html');  
 
 
 
