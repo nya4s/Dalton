@@ -7,15 +7,13 @@ try
 }
 catch (Exception $e)
 {
-        die('Erreur : ' . $e->getMessage());
+    die('Erreur : ' . $e->getMessage());
 }
-
 
 $email = $_GET['email'];
 $pwd = $_GET['pwd'];
 
-
-$reponse = $bdd->query('SELECT * FROM user') or die(print_r($bdd->errorInfo()));
+$reponse = $bdd->query('SELECT * FROM user WHERE email="'.$email.'"') or die(print_r($bdd->errorInfo()));
 
 while($val = $reponse->fetch()){
 
