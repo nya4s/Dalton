@@ -17,15 +17,20 @@ $reponse = $bdd->query('SELECT * FROM user WHERE email="'.$email.'"') or die(pri
 
 while($val = $reponse->fetch()){
 
-    echo $val['id'] . '<br>';
-	echo $val['nom'] . '<br>';
-	echo $val['prenom'] . '<br>';
-	echo $val['email'] . '<br>';
-	echo $val['pwd'] . '<br>';
-	echo $val['date_naissance'] . '<br>';
-	echo $val['date_incription'] . '<br>';
+
+
+	if($pwd == $val['pwd']){
+		echo 'Connexion réussi';
+		header('Location: Acceuil.html');  
+	}
+	else{
+		echo 'Connexion refusé';
+		header('Location: connexion.html');  
+	}
 
 }
+
+
 
 
 
