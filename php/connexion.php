@@ -1,5 +1,9 @@
 <?php 
 
+
+
+session_start();
+
 require("user.php"); 
 require("userManager.php");
 
@@ -14,49 +18,53 @@ catch (Exception $e)
 
 
 
-
-
-
 $email = $_GET['email'];
 $pwd = $_GET['pwd'];
 
-
-/* GETLIST
-
-
-$arr = $manager->getList();
-
-
-for($i = 0 ; $i < sizeof($arr) ; $i ++){
-	
-	$arr[$i]->toString();
-	echo '<br>' . '<br>' ;
-}
-*/
 
 
 $manager = new userManager($bdd);
 $reponse = $bdd->query('SELECT * FROM user WHERE email="'.$email.'"') or die(print_r($bdd->errorInfo()));
 $donnees = $reponse->fetch(PDO::FETCH_ASSOC);
 
-if($pwd == $donnees['pwd']){
 
+if($donnees == NULL){
+    echo 'ERREUR : cette adresse email nexiste pas' ;
 
+    echo '<meta http-equiv="Refresh" content="2;URL=../connexion.html">';
 
+    session_destroy();
 
-	$user = new User($donnees['nom'] , $donnees['prenom'] , $donnees['email'] , $donnees['pwd'] , $donnees['date_naissance']);
-    $user->set_id($donnees['id']);
-    $user->set_date_inscription($donnees['date_inscription']);
-    $user->set_est_connect(1);
+    
+}
+else if($donnees != NULL && $pwd != $donnees['pwd']){
 
-    $user->toString();
+    echo 'ERREUR : mauvais identifiants' ;
 
-    $manager->update($user , $user->get_id());
+    echo '<meta http-equiv="Refresh" content="2;URL=../connexion.html">';
+
+    session_destroy();
 
 }
-else{
-	echo 'ERREUR';
+else if($donnees != NULL && $pwd == $donnees['pwd']){
+
+    $_SESSION['id'] = $donnees['id'];
+    $_SESSION['est_connect'] = 1 ;
+    $_SESSION['est_admin'] = $donnees['est_admin'];
+
+    $manager->connect($manager->get($donnees['id']));
+
+    echo 'Connexion ...' ;
+
+    echo '<meta http-equiv="Refresh" content="2;URL=../Accueil.html">';
+
 }
+
+
+
+
+
+
 
 
 

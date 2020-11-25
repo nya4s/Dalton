@@ -1,9 +1,13 @@
 <?php 
 
+session_start();
+
 require("user.php");
 
 
 require("userManager.php");
+
+
 
 
 try
@@ -16,21 +20,19 @@ catch (Exception $e)
 }
 
 
-$nom = $_GET['nom'];
-$prenom = $_GET['prenom'];
-$email = $_GET['email'];
-$pwd = $_GET['pwd'];
-$date_naissance = $_GET['date'];
 
 
-
-
-
-$user = new User($nom , $prenom , $email , $pwd , $date_naissance);
 $manager = new userManager($bdd);
 
 
-$manager->add($user); //Ajouter un user
+$user = $manager->get($_SESSION['id']);
+
+
+$manager->disconnect($user);
+
+
+session_destroy();
+
 
 header('Location: ../Accueil.html');
 

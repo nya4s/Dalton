@@ -12,6 +12,20 @@ class UserManager
     $this->setNbUser($this->getNbUser());
   }
 
+  public function connect($user){
+    $user->set_est_connect(1);
+    $this->update($user , $user->get_id());
+
+  }
+
+    public function disconnect($user){
+
+
+    $user->set_est_connect(0);
+    $this->update($user , $user->get_id());
+
+  }
+
   public function add(User $user)
   {
 
@@ -40,12 +54,7 @@ class UserManager
     $q->bindValue(':est_connect' , $user->get_est_connect());
 
 
-    echo $user->get_est_connect();
-
-
     $q->execute();
-
-
 
 
     $user->set_id($this->nb_user + 1);
@@ -60,14 +69,19 @@ class UserManager
   }
 
   public function get($id)
-  {
+  { 
 
-    $q = $this->bdd->query('SELECT * FROM user WHERE id = '.$id);
+    $q = $this->bdd->query('SELECT * FROM user WHERE id ="'.$id.'"');
+
+
+
     $donnees = $q->fetch(PDO::FETCH_ASSOC);
 
-    $user = new User($donnees['nom'], $donnees['prenom'], $donnees['email'], $donnees['pwd'], $donnees['date_naissance']);
+    $user = new User($donnees['nom'], $donnees['prenom'], $donnees['email'], $donnees['pwd'], $donnees['date_naissance']);    
+ 
     $user->set_id($donnees['id']);
     $user->set_date_inscription($donnees['date_inscription']);
+    $user->set_est_connect($donnees['est_connect']);
 
     return $user ;
 
@@ -88,6 +102,7 @@ class UserManager
        $user = new User($donnees['nom'] , $donnees['prenom'] , $donnees['email'] , $donnees['pwd'] , $donnees['date_naissance']);
        $user->set_id($donnees['id']);
        $user->set_date_inscription($donnees['date_inscription']);
+       $user->set_est_connect($donnees['est_connect']);
 
        $persos[] = $user ;
     }

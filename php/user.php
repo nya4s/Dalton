@@ -11,6 +11,7 @@
     private $date_inscription;
     private $adr_ip;
     private $est_connect;
+    private $est_admin;
 
     public function __construct($nom , $prenom , $email , $pwd  , $date_naissance) 
     {
@@ -25,6 +26,7 @@
         $this->set_est_connect(0);
     
     }
+
 
     public function toString(){
     	echo 'Id : ' . $this->get_id()  . '<br>' . 'Nom : ' . $this->get_nom() . '<br>' .'Prenom : ' . $this->get_prenom() . '<br>' .'Email : ' . $this->get_email() . '<br>' .'Password : ' . $this->get_pwd() . '<br>' .'Date de naissance : ' . $this->get_date_naissance() . '<br>' .'Date d\'inscription : ' . $this->get_date_inscription()
@@ -64,24 +66,27 @@
     public function get_est_connect(){
         return $this->est_connect;
     }
+    public function get_est_admin(){
+        return $this->est_admin;
+    }
 
     public function set_id($id){
         $this->id = $id ;
     }
 
-    private function set_nom($nom){
+    public function set_nom($nom){
         $this->nom = $nom ;
     }
 
-    private function set_prenom($prenom){
+    public function set_prenom($prenom){
         $this->prenom = $prenom ;
     }
 
-    private function set_email($email){
+    public function set_email($email){
         $this->email = $email ;
     }
 
-    private function set_pwd($pwd){
+    public function set_pwd($pwd){
         $this->pwd = $pwd ;
     }
 
@@ -99,6 +104,9 @@
 
     public function set_est_connect($connect){
         $this->est_connect = $connect ;
+    }
+    private function set_est_admin($admin){
+        $this->est_admin = $admin ;
     }
 }
 

@@ -8,6 +8,8 @@ CREATE TABLE user (
     date_inscription DATETIME DEFAULT NOW(),
     adr_ip VARCHAR(46) NOT NULL ,
     est_connect BOOLEAN NOT NULL ,
+    est_admin BOOLEAN DEFAULT 0 ,
+    
     CONSTRAINT pk_id PRIMARY KEY (id)
 )
 
