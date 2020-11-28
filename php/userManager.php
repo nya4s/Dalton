@@ -20,7 +20,6 @@ class UserManager
 
     public function disconnect($user){
 
-
     $user->set_est_connect(0);
     $this->update($user , $user->get_id());
 
@@ -47,18 +46,13 @@ class UserManager
     $q->bindValue(':date_inscription', $user->get_date_inscription());
 
 
-
     $q->bindValue(':adr_ip' , $user->get_adr_ip());
-
 
     $q->bindValue(':est_connect' , $user->get_est_connect());
 
-
     $q->execute();
 
-
     $user->set_id($this->nb_user + 1);
-
 
   }
 
@@ -89,7 +83,6 @@ class UserManager
 
   public function getList()
   {
-    $users = [];
 
     $q = $this->bdd->query('SELECT * FROM user ORDER BY nom');
 
@@ -119,9 +112,7 @@ class UserManager
 
     while ($donnees = $q->fetch(PDO::FETCH_ASSOC))
     {
-
         $compteur ++ ;
-
     }
 
     return $compteur;
@@ -152,4 +143,6 @@ class UserManager
   {
     $this->bdd = $bdd;
   }
+
+
 }

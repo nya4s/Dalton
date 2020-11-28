@@ -4,3 +4,24 @@
 	margin :50px;
 
 }
+
+#t{
+	width: 200px ;
+	height: 100px;
+	background-color: black;
+}
+
+#chat {
+
+    float:right;
+}
+
+#chat{
+	border: 2px solid black;
+	width: 400px;
+
+}
+
+#messages{
+	height: 600px;
+}

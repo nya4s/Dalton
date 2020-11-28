@@ -10,108 +10,203 @@
 		<link rel="stylesheet" type="text/css" href="css/nav.css">
 
 
-
 		<title>Page "Contactez-nous"</title>
 
 	</head>
 
 	<body>
-		
-		<div>
-			
+
 		<header>
-    <div id="Entete">
-        <nav>
-            <div>
-                <a href="./Accueuil.html">Accueil</a>
-                
-            </div><!--
-	 --><div>
-            <a href="./facts.html">Presse</a>
-        </div><!--
-	 --><div>
-             <a href="./news.html">Nous rejoindre</a>
-            <div class="submenu">
-                <div>
-                    <a href="Métier1.html">Commercial</a>
-                </div>
-                <div>
-                    <a href="Métier2.html">Développer web</a>
-                </div>
-                 <div>
-                    <a href="Métier3.html">Opticient</a>
-                </div>
-            </div>
-        </div>
-          <div>
-                <a href="./Équipe.html">Équipe</a>
-                
-            </div>
-	 <div>
-           <a href="./contact.html">Contact</a>
-            
-        </div>
-        <div>
-           <a href="./FAQ.html">FAQ</a>
-            
-        </div>
-        </nav>
-    </div>
-</header>
 
-		</div>
+            <div id="Entete">
 
-		<div>
+                <nav>
+
+
+                    <div>
+
+                        <a href="./Accueil.html">Accueil</a>
+                
+                    </div>
+
+                    <div>
+
+                        <a href="./Produit.html">Produit</a>
+                
+                    </div>
+
+
+                    <div>
+
+                        <a href="./Presse.html">Presse</a>
+        
+                    </div>
+
+	                
+
+                    <div>
+
+                        <a href="./news.html">Nous rejoindre</a>
+
+                        <div class="submenu">
+
+
+                            <div>
+
+                                <a href="Métier1.html">Commercial</a>
+
+                            </div>
+                            
+                            <div>
+
+                                <a href="Métier2.html">Développer web</a>
+
+                            </div>
+
+                            <div>
+
+                                <a href="Métier3.html">Opticient</a>
+                            
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+
+                        <a href="./equipe.html">Équipe</a>
+                
+                    </div>
+	                
+                    <div>
+
+                        <a href="./contact.html">Contact</a>
+            
+                    </div>
+                    
+                    <div>
+
+                        <a href="./FAQ.html">FAQ</a>
+            
+                    </div>
+
+                    <div>
+
+                        <a href="./inscription.html">Incription/Connexion</a>
+            
+                    </div>
+
+                </nav>
+
+            </div>
+
+        </header>
+
+
+
+		<div id="contact">
 			<h1>Contactez-nous</h1>
 		</div>
 
-		<div class="container_contact">
 		<form action="" method="get">
-			<fieldset><legend>Informations personnelles</legend>
-				<div><label for="lastname">Nom* :</label>
-				<input id="lastname" name="lname" type="text" required placeholder="Dupond">
-				<label for="firstname">Prénom :</label>
-				<input id="firstname" name="urname" type="text" placeholder="Jean"></div>
-				<div><label for="email">Votre adresse mail* :</label>
-				<input id="email" type="email" name="email" required placeholder="yourmail@domain.com"></div>
-				<div><label for="cpostal">Code postal :</label>
-				<input id="cpostal" type="number" name="codepostal" placeholder="34000"></div>
-				<div><label for="pays">Pays :</label>
-				<select id="pays" name="pays">
-				<option value="all">Allemagne</option>
-				<option value="ang">Angleterre</option>
-				<option value="br">Brésil</option>
-				<option value="ca">Canada</option>
-				<option value="ch">Chine</option>
-				<option value="es">Espagne</option>
-				<option value="usa">Etats-Unis</option>
-				<option value="fr" selected="fr">France</option>
-				<option value="it">Italie</option>
-				<option value="mex">Mexique</option>
-				<option value="ru">Russie</option>
-				</select></div>
-			</fieldset>
-			<fieldset>
-			<div><label>Vous avez entendu parler de nous via :</label>
-				<div><label for="rs">Réseaux sociaux</label>
-				<input id="rs" name="via" type="radio"></div>
-				<div><label for="connaissance">Connaissance</label>
-				<input id="connaissance" name="via" type="radio"></div>
-				<div><label for="ri">Recherche internet</label>
-				<input id="ri" type="radio" name="via"></div>
-				<div><label for="autre">Autre</label>
-				<input id="autre" type="radio" name="via">
-				<label>Précisez :</label>
-  				<textarea placeholder="Autre"></textarea></div>
+
+			
+			<div>
+
+				    <h2>INFORMATIONS PERSONNELLES</h2>
+
+				    <input id="lastname" name="lname" type="text" required placeholder="Nom">
+
+				    <input id="firstname" name="urname" type="text" placeholder="Prenom">
+
+				    <input id="email" type="email" name="email" required placeholder="Email">
+
+				    <input id="cpostal" type="number" name="codepostal" placeholder="Code postal">
+
+                    <div id="pays">
+				        <label for="pays">Pays : </label>
+
+				        <select id="pays" name="pays">
+
+			            	<option value="all">Allemagne</option>
+			            	<option value="ang">Angleterre</option>
+			            	<option value="br">Brésil</option>
+			            	<option value="ca">Canada</option>
+			            	<option value="ch">Chine</option>
+			            	<option value="es">Espagne</option>
+			            	<option value="usa">Etats-Unis</option>
+			            	<option value="fr" selected="fr">France</option>
+			            	<option value="it">Italie</option>
+			            	<option value="mex">Mexique</option>
+			            	<option value="ru">Russie</option>
+
+				        </select>
+				    </div>
+
 			</div>
-			<div><label for="recontact">Date à laquelle vous souhaitez être recontacté* :</label>
-			<input id="recontact" type="date" name="recontact" required=""></div>
-			<div><label>Pour nous faire passer un message :</label>
-  			<textarea placeholder="Exprimez-vous !"></textarea></div>
-			<input type="submit" value="Envoyer">
-			</fieldset>
+
+			<div>
+
+                <label>Vous avez entendu parler de nous via :</label>
+
+			    <div>
+
+				    <label for="rs">Réseaux sociaux</label>
+				    <input id="rs" name="via" type="radio">
+
+			    </div>
+
+			    <div>
+
+				    <label for="connaissance">Connaissance</label>
+				    <input id="connaissance" name="via" type="radio">
+
+				</div>
+
+				<div>
+
+				    <label for="ri">Recherche internet</label>
+				    <input id="ri" type="radio" name="via">
+
+				</div>
+
+				<div>
+
+				    <label for="autre">Autre</label>
+				    <input id="autre" type="radio" name="via">
+
+			     </div>
+
+			     <div>
+
+				    <label>Précisez :</label>
+  				    <textarea placeholder="Autre"></textarea>
+
+  				</div>
+
+  				<div>
+			
+			        <label for="recontact">Date à laquelle vous souhaitez être recontacté* :</label>
+			        <input id="recontact" type="date" name="recontact" required="">
+
+			    </div>
+
+			    <div>
+			        <label>Pour nous faire passer un message :</label>
+  			        <textarea placeholder="Exprimez-vous !"></textarea>
+
+  			    </div>
+
+			        <input id="submit" type="submit" value="Envoyer">
+
+
+
+			</div>
 		</form>
-		</div>
+
 	</body>
 
 </html>
