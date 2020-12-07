@@ -5,10 +5,9 @@ body{
 	color: white;
 }
 
-main{
+article{
 	display: flex;
 	flex-direction: row;
-	align-items: center;
 }
 
 img.equipe{
