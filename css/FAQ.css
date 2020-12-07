@@ -4,9 +4,10 @@ body{
     color: white;
 	margin-left:400px;
 	margin-right:400px;
-	text-align: center;
+
 }
-div {
+div.Text {
+	text-align: center;
     display: flex;
     flex-direction: column;
 
