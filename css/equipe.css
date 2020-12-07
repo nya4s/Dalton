@@ -1,8 +1,14 @@
 body{
 	background: #53316F url('https://img5.goodfon.com/wallpaper/nbig/b/12/synth-retrowave-synthwave-fon-new-retro-wave-sintveiv-ret-29.jpg') no-repeat;
-	background-size: auto;
+	background-size: cover;
 	background-attachment: fixed;
 	color: white;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 }
 
 article{
@@ -15,17 +21,27 @@ img.equipe{
 	width: 150px;
 }
 
-img.gast{
+#gast{
 	height: 170px;
+}
+
+.fiche{
+	width: 50%;
 }
 
 .fiche>div{
 	background-color: #e88bed;
-	width: 60%;
+	width: 70%;
 	margin: 5% 3%;
 	border:2px solid black;
 	border-radius:10px ;
 	color: black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div>div{
+	text-align: left;
 }
 
 .equipe{
