@@ -2,11 +2,12 @@ body{
 	background: black url('https://a-static.besthdwallpaper.com/lunettes-nike-vision-fond-d-ecran-2880x1620-17040_52.jpg') no-repeat;
 	background-size: cover;
     color: white;
-	margin-left:400px;
-	margin-right:400px;
+
 
 }
-div.Text {
+#Text {
+	margin-left:400px;
+	margin-right:400px;
 	text-align: center;
     display: flex;
     flex-direction: column;
