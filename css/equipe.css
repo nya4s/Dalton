@@ -1,6 +1,7 @@
 body{
 	background: #53316F url('https://img5.goodfon.com/wallpaper/nbig/b/12/synth-retrowave-synthwave-fon-new-retro-wave-sintveiv-ret-29.jpg') no-repeat;
-	background-size: cover;
+	background-size: 100%;
+	background-attachment: fixed;
 	color: white;
 }
 
