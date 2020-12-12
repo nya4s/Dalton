@@ -13,7 +13,6 @@ main {
 
 article{
 	display: flex;
-	flex-direction: row;
 }
 
 img.equipe{
@@ -25,10 +24,6 @@ img.equipe{
 	height: 170px;
 }
 
-.fiche{
-	width: 50%;
-}
-
 .fiche>div{
 	background-color: #e88bed;
 	width: 70%;
@@ -38,6 +33,8 @@ img.equipe{
 	color: black;
 	margin-left: auto;
 	margin-right: auto;
+	min-width: 300px;
+	max-width: 400px;
 }
 
 div>div{
@@ -48,4 +45,13 @@ div>div{
 	height:10em;
 	border: 2px solid black;
 	border-radius: 10px
+}
+
+@media(min-width: 768px){
+	article{flex-direction: row;}
+	.fiche{width: 50%;}
+}
+
+@media(max-width: 768px){
+	article{flex-direction: column;}
 }
