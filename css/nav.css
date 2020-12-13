@@ -3,32 +3,35 @@ nav{
 		display: flex;
 		color: red;
 		flex-direction: row;
-		
-		justify-content: space-around;
+	justify-content: flex-end;
 }
+
 nav a{
-		border-left:  1px solid white;
+		/*border-left:  1px solid white;*/
 		color: white;
 		padding: 15px;
 		border-radius: 10px;
+		text-decoration: none;
 		
 	}
 
 nav a:hover{
 	border-right: 1px solid white;
+	border-left: 1px solid white;
 	border-radius: 10px;
 
 }
 
 nav>div{
-	
+	margin-left: 1%;
+
 }
 
 header{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	border-bottom:2px solid white;
+	/*border-bottom:2px solid white;*/
 }
 
 .submenu{
@@ -38,6 +41,7 @@ header{
 }
 #logo{
 	width:10%;
+	border-radius: 10px;
 }
 
 
