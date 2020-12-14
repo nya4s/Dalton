@@ -36,3 +36,11 @@ article{
 @media(max-width: 768px){
 	article{flex-direction: column;}
 }
+
+main>a{
+	color: white;
+	padding: 15px;
+	border-radius: 10px;
+	text-decoration: none;
+	font-weight: bold;
+}
