@@ -37,11 +37,12 @@ header{
 div:hover>.submenu{
 	display: flex;
 }
+
 .submenu{
 	display: none;
 	flex-direction: column;
 	justify-content: stretch;
-	top:100px;
+	top:7%;
 	position: absolute;
 
 }
@@ -50,7 +51,6 @@ div:hover>.submenu{
 	width:10%;
 	border-radius: 10px;
 }
-
 
 .submenu>div{
 	display: flex;
