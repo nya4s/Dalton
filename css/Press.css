@@ -66,9 +66,10 @@ article img{
 }
 @media(max-width:1000px){
 	article{flex-direction: column;
-	justify-content: center;}
+		justify-content: center;
+	}
 	.img_news{
 		flex-direction: row;
-	align-content: center;
+		align-content: center;
 	}
 }

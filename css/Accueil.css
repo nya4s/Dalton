@@ -3,3 +3,13 @@ body{
 	background-size: cover;
 
 }
+
+div{
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+
+h2{
+	color: white;
+}
