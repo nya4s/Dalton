@@ -5,62 +5,38 @@ body{
 	color: white;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+main {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 }
 
-form{
-    display: flex;
+form {
+	display: flex;
 }
 
-.fiche {
-    background-color: rgba(232,139,237, .2);
-    border:2px solid black;
-    border-radius:10px ;
-    color: white;
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 315px;
-    max-width: 400px;
-    padding: 15px;
+.fiche>div{
+	background-color: rgba(232,139,237, .2);
+	width: 70%;
+	margin: 5% 3%;
+	border:2px solid black;
+	border-radius:10px ;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 315px;
+	max-width: 400px;
 }
 
-
-left > div > input{
-    height:55px;
-    width: 85%;
-    margin: 5px;
+left input{
+	padding: 15px;
 }
 
-right > div{
-    text-align: left;
+@media(min-width: 768px){
+	form{flex-direction: row;}
+	.fiche{width: 50%;}
 }
 
-right > div > div{
-    margin: 10px;
-}
-right > div > div > div{
-    margin: 5px 0 0 15px;
-}
-
-#submit{
-    height: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-#pays{
-    width: 60%;
-}
-
-@media(min-width: 768px;){
-    form{flex-direction: row;}
-    .fiche{width: 50%;}
-}
-
-@media(max-width: 768px;){
-    form{flex-direction: column;}    
+@media(max-width: 768px){
+	form{flex-direction: column;}
 }
