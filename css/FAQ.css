@@ -25,6 +25,7 @@ footer{
 	background-color: black;
 	display: flex;
 	flex-direction: row;
+	border:10px solid black;
 }
 footer>div{
 	text-align:center;
