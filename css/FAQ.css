@@ -16,10 +16,16 @@ a:link{
 	color: white;
 	cursor: pointer;
 }
+a:visited{
+	text-decoration: none;
+	color: white;
+}
+
 footer{
 	background-color: black;
 	display: flex;
 	flex-direction: row;
+	border:10px solid black;
 }
 footer>div{
 	text-align:center;
@@ -35,11 +41,14 @@ footer>div{
 	text-align: center;
 	width: 70%;
 	min-width: 400px;
-	max-width: 600px;
+	max-width: 800px;
 	background-color: rgba(48, 45, 45, 0.2);
 	border-radius:10px;
 	border:2px solid black;
 	margin-bottom: 2%;
 	margin-top: 2%;
-	
+}
+.image{
+	width: 5%;
+	height: 5%;
 }
