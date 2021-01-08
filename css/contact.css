@@ -1,86 +1,66 @@
 body{
 	background: #53316F url('https://img5.goodfon.com/wallpaper/nbig/b/12/synth-retrowave-synthwave-fon-new-retro-wave-sintveiv-ret-29.jpg') no-repeat;
 	background-size: cover;
+    background-attachment: fixed;
 	color: white;
-  font-family: 'Open Sans', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 form{
-  display:flex;
-  justify-content: space-around;
+    display: flex;
 }
 
-form > div:first-child{
-
-  padding:20px;
-  width: 35%;
-  background-color:#fff;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-
-}
-
-form > div:nth-child(2){
-
-  padding:20px;
-  width: 40%;
-
-  display: flex;
-  flex-direction: column;
-
-  background-color:#fff;
-  border-radius: 10px;
-
+.fiche {
+    background-color: rgba(232,139,237, .2);
+    border:2px solid black;
+    border-radius:10px ;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 315px;
+    max-width: 400px;
+    padding: 15px;
 }
 
 
-form > div:first-child > input{
-  height:55px;
-  width: 85%;
-  margin: 5px;
+left > div > input{
+    height:55px;
+    width: 85%;
+    margin: 5px;
 }
 
-form > div:nth-child(2) > div{
-
-  padding:15px;
-
+right > div{
+    text-align: left;
 }
 
-
-
-label{
-
-  font-weight:lighter;
-  color:#414141;
-
+right > div > div{
+    margin: 10px;
 }
-
-h2{
-
-  font-weight:lighter;
-  color:#414141;
+right > div > div > div{
+    margin: 5px 0 0 15px;
 }
 
 #submit{
-
-  height: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 #pays{
-   width: 60%;
+    width: 60%;
 }
-@media(max-width:768px) {
-  form{
-    flex-direction: column;
-    align-items: center;
-  }
-  form>div{
-    margin-top: 2%;
-  }
+
+@media(min-width: 768px;){
+    form{flex-direction: row;}
+    .fiche{width: 50%;}
+}
+
+@media(max-width: 768px;){
+    form{flex-direction: column;}    
 }
