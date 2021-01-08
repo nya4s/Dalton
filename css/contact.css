@@ -26,10 +26,22 @@ form {
 	margin-right: auto;
 	min-width: 315px;
 	max-width: 400px;
+	padding: 10px;
 }
 
 left input{
+	width: 65%;
 	padding: 15px;
+	margin: 5px;
+}
+
+right>div>div{
+	margin: 10px;
+}
+
+right>div>div>div{
+	text-align: left;
+	margin: 5px 5px 5px 15%;
 }
 
 @media(min-width: 768px){
