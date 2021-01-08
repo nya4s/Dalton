@@ -75,3 +75,12 @@ h2{
 #pays{
    width: 60%;
 }
+@media(max-width:768px) {
+  form{
+    flex-direction: column;
+    align-items: center;
+  }
+  form>div{
+    margin-top: 2%;
+  }
+}

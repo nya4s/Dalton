@@ -47,13 +47,12 @@ div:hover>.submenu{
 
 }
 
-<<<<<<< HEAD
 .logo{
-	width:10%;
-=======
+	width:10%
+		}
+
 #logo{
 	width:100%;
->>>>>>> 053e24d8c28662339bea3fb06a989b07e11ef2d4
 	border-radius: 10px;
 }
 
