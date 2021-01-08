@@ -49,14 +49,14 @@ a{
 @media(min-width: 768px){
 	article{flex-direction: row;}
 	.fiche{width: 50%;}
+	main div{
+		margin-top: 5%;
+	}
 }
 
 @media(max-width:768px) {
 	article {
 		flex-direction: column;
 		justify-content: center;
-	}
-	main div{
-		margin-top: 2%;
 	}
 }
