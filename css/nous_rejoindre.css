@@ -8,13 +8,26 @@ body{
 main {
 	display: flex;
 	flex-direction: column;
-	text-align: center;
 }
-
-main>div{
+article{
+	display: flex;
+	flex-direction: row;
+}
+.divImg{
+	width: 100%;
+	border-radius: 0%;
+	border: 0px;
+	background: transparent;
+}
+.imgMetier{
+	width: 100%;
+}
+main div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	background-color: rgba(232,139,237, .2);
 	width: 70%;
-	margin: 5% 3%;
 	border:2px solid black;
 	border-radius:10px ;
 	color: white;

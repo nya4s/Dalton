@@ -3,11 +3,15 @@ body{
 	background-size: cover;
 
 }
-
-div{
+main{
+	display: flex;
+}
+main>div{
 	display: flex;
 	flex-direction: column;
 	color: white;
+	align-items: center;
+	width: 50%;
 }
 
 h2{
