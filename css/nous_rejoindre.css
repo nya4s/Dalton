@@ -8,6 +8,7 @@ body{
 main {
 	display: flex;
 	flex-direction: column;
+	text-align: center;
 }
 article{
 	display: flex;
@@ -45,7 +46,12 @@ a{
 	font-weight: bold;
 }
 
-@media(max-width:1000px) {
+@media(min-width: 768px){
+	article{flex-direction: row;}
+	.fiche{width: 50%;}
+}
+
+@media(max-width:768px) {
 	article {
 		flex-direction: column;
 		justify-content: center;
