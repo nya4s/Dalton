@@ -9,6 +9,10 @@ main{
 	text-align: center;
 }
 
+article{
+	display: flex;
+}
+
 .atext{
 	background-color: rgba(232,139,237, .2);
 	width: 70%;
@@ -26,3 +30,19 @@ p{
 	margin: 10px;
 }
 
+a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+@media(min-width: 768px){
+	article{flex-direction: row;}
+	.fiche{width: 50%;}
+}
+
+@media(max-width:768px) {
+	article {
+		flex-direction: column;
+	}
+}
