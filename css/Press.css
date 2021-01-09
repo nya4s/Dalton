@@ -73,3 +73,39 @@ article img{
 		align-content: center;
 	}
 }
+/*@media(max-width: 480px){*/
+
+
+/*	nav{*/
+
+/*		display: none;*/
+/*	}*/
+
+/*	.burger{*/
+/*		display: flex;*/
+/*		position: absolute;*/
+/*		top: 1%;*/
+/*		left: 80%;*/
+/*		bottom: 5%;*/
+
+
+/*		width: 80vw;*/
+/*		height: 100vh;*/
+/*		flex-direction: column;*/
+/*	}*/
+/*	#menu2 {*/
+/*		background-color:purple;*/
+/*		display: none;*/
+/*	}*/
+
+/*	.burger:hover >#menu2{*/
+/*		display: block;*/
+
+/*	}*/
+/*}*/
+
+@media(min-width: 481px){
+	.burger{
+		display: none;
+		width: 50px;}
+}
