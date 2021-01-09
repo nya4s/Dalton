@@ -9,23 +9,6 @@ main{
 	text-align: center;
 }
 
-article{
-	display: flex;
-}
-
-.atext{
-	background-color: rgba(232,139,237, .2);
-	width: 70%;
-	margin: 5% 3%;
-	border:2px solid black;
-	border-radius:10px ;
-	color: white;
-	margin-left: auto;
-	margin-right: auto;
-	min-width: 300px;
-	max-width: 400px;
-}
-
 p{
 	margin: 10px;
 }
@@ -37,12 +20,39 @@ a{
 }
 
 @media(min-width: 768px){
-	article{flex-direction: row;}
-	.fiche{width: 50%;}
+	.atext{
+		display: flex;
+		flex-direction: row;
+		background-color: rgba(232,139,237, .2);
+		width: 80%;
+		margin: 5% 3%;
+		border:2px solid black;
+		border-radius:10px ;
+		color: white;
+		margin-left: auto;
+		margin-right: auto;
+		min-width: 760px;
+		min-height: 150px;
+		align-items: center;
+		padding-left: 10px;
+	}
+	.atext{
+		display: flex;
+		flex-direction: row;
+	}
 }
 
 @media(max-width:768px) {
-	article {
-		flex-direction: column;
+	.atext{
+		background-color: rgba(232,139,237, .2);
+		width: 70%;
+		margin: 5% 3%;
+		border:2px solid black;
+		border-radius:10px ;
+		color: white;
+		margin-left: auto;
+		margin-right: auto;
+		min-width: 300px;
+		max-width: 400px;
 	}
 }
