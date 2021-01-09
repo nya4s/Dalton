@@ -37,6 +37,10 @@ img.equipe{
 	max-width: 400px;
 }
 
+p{
+	margin: 10px;
+}
+
 div>div{
 	text-align: left;
 }
