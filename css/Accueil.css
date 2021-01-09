@@ -20,6 +20,13 @@ a{
 	font-weight: bold;
 }
 
+h1{
+	size: 70px;
+	text-align: left;
+	margin-left: 70px;
+	margin-top: 60px;
+}
+
 @media(min-width: 768px){
 	.atext{
 		display: flex;
