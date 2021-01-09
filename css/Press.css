@@ -103,7 +103,6 @@ article img{
 		width: 20vw;
 		height: 5vh;
 		flex-direction: column;
-		background: white;
 	}
 	#menuBurger {
 		background-color: rgba(170,170,170, .8);
