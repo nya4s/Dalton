@@ -22,8 +22,30 @@ section img{
 	border-radius: 10px;
 }
 
+section>div{
+	width: 70%;
+}
+
+section>div a{
+	color: white;
+	padding: 15px;
+	text-decoration: none;
+	font-weight: bold;
+	border: 2px solid black;
+	border-radius: 10px;
+
+}
+
+.produit{
+	background-color: rgba(232,139,237, .2);
+}
+
+.inscription{
+	background-color: rgba(170,170,170, .2);
+}
+
 p{
-	margin: 10px;
+	margin: 10%;
 }
 
 h1{
