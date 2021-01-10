@@ -9,7 +9,6 @@ main{
 	color: white;
 }
 
-
 #Text a:link{
 	text-decoration: none;
 	color:white;
@@ -27,14 +26,10 @@ main{
 	font-weight: bolder;
 }
 
-a:hover{
-	color: orangered;
-}
-#Text a :hover{
+#Text a:hover{
 	color: orangered;
 }
 section {
-
     display: flex;
     flex-direction: column;
 	margin-left: auto;
@@ -52,5 +47,3 @@ section {
 	width: 10%;
 	height: 60%;
 }
-
-
