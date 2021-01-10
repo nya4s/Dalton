@@ -2,7 +2,7 @@ body{
 	background: black;
 }
 
-#background{
+main{
 	background: black url('https://a-static.besthdwallpaper.com/lunettes-nike-vision-fond-d-ecran-2880x1620-17040_52.jpg') no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -13,7 +13,7 @@ p{
 	text-align: justify;
 }
 
-main{
+section{
 	display: flex;
 	flex-direction: column;
 	align-content: center;

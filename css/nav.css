@@ -72,6 +72,9 @@ div:hover>.submenu{
 	visibility: initial;
 
 }
+.burger>img{
+	width: 70px;
+}
 
 @media(max-width: 768px){
 
@@ -91,6 +94,7 @@ div:hover>.submenu{
 
 		display: none;
 	}
+
 
 	.burger{
 		display: flex;
