@@ -11,19 +11,19 @@ main{
 
 section{
 	display: flex;
-	flex-direction: column;
 	text-align: center;
+	justify-content: space-around;
+
+}
+section>img{
+	width: 60%;
 }
 
 p{
 	margin: 10px;
 }
 
-a{
-	color: white;
-	text-decoration: none;
-	font-weight: bold;
-}
+
 
 h1{
 	font-size: 2em;

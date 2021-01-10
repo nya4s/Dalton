@@ -84,11 +84,11 @@ div:hover>.submenu{
 
 @media(max-width: 768px){
 
-	a:visited{
+	.burger a:visited{
 		text-decoration: none;
 		color: black;
 	}
-	a:link{
+	.burger a:link{
 		text-decoration: none;
 		color: black;
 	}

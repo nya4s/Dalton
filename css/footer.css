@@ -4,7 +4,7 @@ footer{
 	color: white;
 	justify-content: space-around;
 }
-#background{padding-bottom: 2%}
+main{padding-bottom: 2%;}
 @media(min-width: 768px){
 	footer{flex-direction: row;}
 }
@@ -26,6 +26,7 @@ footer{
 	margin-right: auto;
 }
 
+
 footer a:link{
 	text-decoration: none;
 	color:white;
@@ -37,6 +38,10 @@ footer a:visited{
 	text-decoration: none;
 	color: white;
 	font-weight: bolder;
+}
+
+footer a:hover{
+	color: orangered;
 }
 
 .image{

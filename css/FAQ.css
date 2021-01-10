@@ -13,21 +13,25 @@ header{
 	color: white;
 }
 
-a:link{
+#Text a:link{
 	text-decoration: none;
 	color:white;
 	cursor: pointer;
-	font-weight: bolder;
+	font-weight: bold;
 }
-
-
-a:visited{
+#Text{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#Text a:visited{
 	text-decoration: none;
 	color: white;
 	font-weight: bolder;
 }
-a:hover{
-	color: orange;
+
+section a:hover{
+	color: orangered;
 }
 section {
 
@@ -36,7 +40,7 @@ section {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	width: 70%;
+	width: 50%;
 	background-color: rgba(48, 45, 45, 0.2);
 	border-radius:10px;
 	border:2px solid black;
