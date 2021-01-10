@@ -9,9 +9,6 @@ main{
 	color: white;
 }
 
-header{
-	color: white;
-}
 
 #Text a:link{
 	text-decoration: none;
@@ -30,7 +27,7 @@ header{
 	font-weight: bolder;
 }
 
-section a:hover{
+a:hover{
 	color: orangered;
 }
 section {
