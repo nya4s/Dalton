@@ -56,3 +56,18 @@ article{
 	/*align-items: center;*/
 }
 
+thead{
+	background-color: rgba(232,139,237,.8);
+
+}
+thead .skill{color: white;}
+/*change couleur une ligne sur deux*/
+tbody>tr:nth-child(odd){
+	background-color: rgba(232,139,237,.6);
+}
+tr:nth-child(even){
+	background-color: rgba(232,139,237,.2);
+}
+
+td{text-align: center;}
+table .skill{padding: 0px 5px;}
