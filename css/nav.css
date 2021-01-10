@@ -1,3 +1,9 @@
+
+@font-face {
+	font-family: teen;
+	src:url(teen.ttf);
+}
+
 nav{
 	width: 100%;
 	display: flex;
