@@ -53,16 +53,14 @@ div:hover>.submenu{
 
 }
 
-.logo{
-	width:10%
-		}
 
-#logo{
+
+.logo{
 	width:100%;
 	border-radius: 10px;
 }
 
-#reflg{
+.reflg{
 	background: black;
 	display: flex;
 	flex-shrink: 2;
@@ -75,3 +73,56 @@ div:hover>.submenu{
 
 }
 
+@media(max-width: 768px){
+
+	a:visited{
+		text-decoration: none;
+		color: black;
+	}
+	a:link{
+		text-decoration: none;
+		color: black;
+	}
+
+	a:hover{
+		color: orangered
+	}
+	nav{
+
+		display: none;
+	}
+
+	.burger{
+		display: flex;
+		position: absolute;
+		top: 1%;
+		left: 80%;
+		bottom: 5%;
+
+
+		width: 20vw;
+		height: 5vh;
+		flex-direction: column;
+	}
+	#menuBurger {
+		background-color: rgba(170,170,170, .8);
+		display: none;
+	}
+
+	.burger:hover >#menuBurger{
+		display: flex;
+		flex-direction: column;
+
+
+	}
+
+	#menuBurger>div{
+		margin-top: 2%;
+	}
+}
+
+@media(min-width: 769px){
+	.burger{
+		display: none;
+	}
+}
