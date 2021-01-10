@@ -5,14 +5,22 @@ footer{
 	justify-content: space-around;
 }
 
-footer>div{
+@media(min-width: 768px;){
+	footer{flex-direction: row;}
+}
+
+@media(max-width: 768px;){
+	footer{flex-direction: column;}
+}
+
+.direction{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	flex-grow: 2;
 }
 
-footer>div>div{
+.direction>div{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
