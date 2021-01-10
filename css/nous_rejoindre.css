@@ -1,4 +1,8 @@
 body{
+	background: black;
+}
+
+#background{
 	background: #53316F url('https://a-static.besthdwallpaper.com/lunettes-nike-vision-fond-d-ecran-2880x1620-17040_52.jpg') no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
