@@ -20,12 +20,15 @@ a:link{
 	font-weight: bolder;
 }
 
+
 a:visited{
 	text-decoration: none;
 	color: white;
 	font-weight: bolder;
 }
-
+a:hover{
+	color: orange;
+}
 section {
 
     display: flex;
