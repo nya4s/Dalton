@@ -93,7 +93,7 @@ div:hover>.submenu{
 		color: black;
 	}
 
-	a:hover{
+	.burger a:hover{
 		color: orangered
 	}
 	nav{

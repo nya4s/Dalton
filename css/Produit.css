@@ -71,10 +71,23 @@ td{
 	text-align: center;
 	font-size: 90%;
 }
-table .skill{padding: 0px 5px;}
+table .skill{
+	padding: 0px 5px;
+}
 table{
 	margin:2% 0%;
 	width:60% ;
 
+}
+
+@media (max-width: 768px) {
+	article{
+		flex-direction: column;
+		align-items: center;
+		margin-top: 2%;
+	}
+	article>div{
+		width: 40%;
+	}
 }
 
