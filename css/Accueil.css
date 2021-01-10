@@ -1,9 +1,14 @@
 body{
+	background: black;
+}
+
+#background{
 	background: #53316F url('https://img5.goodfon.com/wallpaper/nbig/3/ea/synth-retrowave-synthwave-fon-new-retro-wave-sintveiv-ret-32.jpg') no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	color: white;
 }
+
 main{
 	display: flex;
 	flex-direction: column;
