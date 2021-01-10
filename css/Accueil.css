@@ -15,15 +15,16 @@ section{
 	justify-content: space-around;
 
 }
-section>img{
-	width: 60%;
+
+section img{
+	width: 100%;
+	border: 2px solid black;
+	border-radius: 10px;
 }
 
 p{
 	margin: 10px;
 }
-
-
 
 h1{
 	font-size: 2em;
