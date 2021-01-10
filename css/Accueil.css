@@ -13,17 +13,21 @@ section{
 	display: flex;
 	text-align: center;
 	justify-content: space-around;
+}
 
+section>div{
+	width: 70%;
+	margin-bottom: 20px;
+}
+
+section>div>div{
+	min-width: 350px;
 }
 
 section img{
 	width: 100%;
 	border: 2px solid black;
 	border-radius: 10px;
-}
-
-section>div{
-	width: 70%;
 }
 
 section>div a{
@@ -33,7 +37,6 @@ section>div a{
 	font-weight: bold;
 	border: 2px solid black;
 	border-radius: 10px;
-
 }
 
 .produit{
@@ -86,5 +89,8 @@ h1{
 		margin-right: auto;
 		min-width: 300px;
 		max-width: 400px;
+	}
+	section{
+		flex-direction: column;
 	}
 }
