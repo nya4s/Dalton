@@ -20,10 +20,6 @@ section>div{
 	margin-bottom: 20px;
 }
 
-section>div>div{
-	min-width: 350px;
-}
-
 section img{
 	width: 100%;
 	border: 2px solid black;
@@ -39,7 +35,7 @@ section>div a{
 	border-radius: 10px;
 }
 
-.produit{
+.button{
 	background-color: rgba(232,139,237, .2);
 }
 
@@ -75,6 +71,9 @@ h1{
 		align-items: center;
 		padding-left: 10px;
 	}
+	section>div>div{
+		min-width: 350px;
+	}
 }
 
 @media(max-width:768px) {
@@ -92,5 +91,16 @@ h1{
 	}
 	section{
 		flex-direction: column;
+		align-items: center;
 	}
+	section>div{
+		width: 90%;
+	}
+	section>div a{
+		margin-right: 10%;
+	}
+	section>div>div{
+		min-width: 450px;
+	}
+
 }
