@@ -3,13 +3,14 @@ footer{
 	display: flex;	
 	color: white;
 	justify-content: space-around;
+	border: 10px solid black;
 }
 
-@media(min-width: 768px;){
+@media(min-width: 768px){
 	footer{flex-direction: row;}
 }
 
-@media(max-width: 768px;){
+@media(max-width: 768px){
 	footer{flex-direction: column;}
 }
 

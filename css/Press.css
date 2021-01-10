@@ -73,7 +73,7 @@ article img{
 		align-content: center;
 	}
 }
-@media(max-width: 480px){
+@media(max-width: 768px){
 
 	a:visited{
 		text-decoration: none;
@@ -121,7 +121,7 @@ article img{
 	}
 }
 
-@media(min-width: 481px){
+@media(min-width: 769px){
 	.burger{
 		display: none;
 		}
