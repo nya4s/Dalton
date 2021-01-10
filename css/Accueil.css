@@ -2,14 +2,14 @@ body{
 	background: black;
 }
 
-#background{
+main{
 	background: #53316F url('https://img5.goodfon.com/wallpaper/nbig/3/ea/synth-retrowave-synthwave-fon-new-retro-wave-sintveiv-ret-32.jpg') no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	color: white;
 }
 
-main{
+section{
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -26,7 +26,7 @@ a{
 }
 
 h1{
-	size: 70px;
+	font-size: 2em;
 	text-align: left;
 	margin-left: 70px;
 	margin-top: 60px;
