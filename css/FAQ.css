@@ -30,6 +30,9 @@ main{
 a:hover{
 	color: orangered;
 }
+#Text a :hover{
+	color: orangered;
+}
 section {
 
     display: flex;
