@@ -8,7 +8,7 @@ body{
 	background: black;
 }
 
-#background{
+main{
 	background: #53316F url('https://img5.goodfon.com/wallpaper/nbig/b/12/synth-retrowave-synthwave-fon-new-retro-wave-sintveiv-ret-29.jpg') no-repeat;
 	background-size: cover;
 	color: white;
@@ -42,10 +42,12 @@ article>div{
 
 }
 
-main{
+section{
 
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 }
 
 article{
@@ -71,3 +73,8 @@ tr:nth-child(even){
 
 td{text-align: center;}
 table .skill{padding: 0px 5px;}
+table{
+	width:60% ;
+
+}
+
