@@ -9,6 +9,10 @@ main{
 	color: white;
 }
 
+h1{
+	font-size: 2em;
+}
+
 section {
 	display: flex;
 	flex-direction: column;
